@@ -1,0 +1,7 @@
+search_app/.idea/
+search_app/build/
+/README.md
+search_app/ios/
+search_app/.metadata
+search_app/README.md
+search_app/pubspec.lock
