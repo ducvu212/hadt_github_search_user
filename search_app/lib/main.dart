@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
 void main() {
   runApp(MyApp());
 }
@@ -29,8 +29,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
+class  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -50,6 +49,5 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ],
-    );
   }
 }
