@@ -1,6 +1,7 @@
 import 'dart:convert';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+// import 'package:http/http.dart' as http;
 
 void main() {
   runApp(MyApp());
@@ -34,9 +35,9 @@ class _UserState extends State<User> {
 
   fetchData() async {
     var url;
-    url = await http.get(
-        Uri.parse("https://api.github.com/search/users?q="+query));
-    return json.decode(url.body)['items'];
+    var dio = Dio();
+    url = await dio.get('https://api.github.com/search/users?q='+query);
+    return url.data['items'];
   }
 
   @override
